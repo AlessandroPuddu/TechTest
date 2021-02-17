@@ -47,7 +47,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerPickupsGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/VoidEventListener.cs" />
@@ -56,9 +55,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/InternalVoidEventChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/SubjectObserersMediator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/SubjectObserversMediator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/VoidEventInternalListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -137,42 +137,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs</url>
-          <line>13</line>
-          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="13" containingFunctionPresentation="method 'AddListener'">
+          <line>17</line>
+          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="17" containingFunctionPresentation="method 'AddListener'">
             <startOffsets>
-              <option value="519" />
+              <option value="599" />
             </startOffsets>
             <endOffsets>
-              <option value="520" />
+              <option value="600" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs</url>
-          <line>21</line>
-          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="21" containingFunctionPresentation="method 'RemoveListener'">
+          <line>25</line>
+          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="25" containingFunctionPresentation="method 'RemoveListener'">
             <startOffsets>
-              <option value="785" />
+              <option value="865" />
             </startOffsets>
             <endOffsets>
-              <option value="786" />
+              <option value="866" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs</url>
-          <line>28</line>
-          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="28" containingFunctionPresentation="method 'Notify'">
+          <line>32</line>
+          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="32" containingFunctionPresentation="method 'Notify'">
             <startOffsets>
-              <option value="970" />
+              <option value="1050" />
             </startOffsets>
             <endOffsets>
-              <option value="971" />
+              <option value="1051" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs</url>
+          <line>12</line>
+          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\CommunicationSystem\Channels\Events\VoidEventInternalChannel.cs" initialLine="12" containingFunctionPresentation="method 'OnDisable'">
+            <startOffsets>
+              <option value="477" />
+            </startOffsets>
+            <endOffsets>
+              <option value="478" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
