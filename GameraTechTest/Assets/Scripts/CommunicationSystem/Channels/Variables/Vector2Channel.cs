@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CommunicationSystem
+namespace CommunicationSystem.Channels.Variables
 {
     [CreateAssetMenu(menuName = "CommunicationSystem/Variables/Vector2Channel", fileName = "Vector2Channel", order = 1)]
     public class Vector2Channel : AbstractChannel<Vector2>

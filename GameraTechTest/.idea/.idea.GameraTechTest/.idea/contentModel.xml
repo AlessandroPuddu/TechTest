@@ -5,9 +5,20 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="CameraSystem" t="Include">
+            <e p="CameraMovement.cs" t="Include" />
+          </e>
           <e p="CommunicationSystem" t="Include">
             <e p="AbstractChannel.cs" t="Include" />
-            <e p="Vector2Channel.cs" t="Include" />
+            <e p="Channels" t="Include">
+              <e p="Variables" t="Include">
+                <e p="TransformChannel.cs" t="Include" />
+                <e p="Vector2Channel.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Setters" t="Include">
+              <e p="TransformChannelSetter.cs" t="Include" />
+            </e>
           </e>
           <e p="PlayerInputSystem" t="Include">
             <e p="InputReader.cs" t="Include" />

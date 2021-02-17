@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Timers;
 using CommunicationSystem;
+using CommunicationSystem.Channels.Variables;
 using UnityEngine;
 
 namespace PlayerInputSystem

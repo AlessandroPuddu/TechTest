@@ -10,12 +10,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/AbstractChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputSystem/InputReader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputSystem/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Vector2Channel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Variables/Vector2Channel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/ChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/TransformChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/TransformChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Variables/TransformChannel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraSystem/CameraMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementSystem/PlayerMovement.cs" />
     </changedPaths>
   </component>
@@ -30,6 +39,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -60,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613554341807</updated>
-      <workItem from="1613554350869" duration="1506000" />
+      <workItem from="1613554350869" duration="3185000" />
     </task>
     <servers />
   </component>
