@@ -6,9 +6,9 @@ namespace CommunicationSystem
     {
         [SerializeField] protected T value;
 
-        protected virtual T GetValue() => value;
-        protected virtual void SetValue(T newValue) => value = newValue;
-        protected abstract void Add(T toAdd);
-        protected abstract void Remove(T toRemove);
+        public virtual T GetValue() => value;
+        public virtual void SetValue(T newValue) => value = newValue;
+        public abstract void Add(T toAdd);
+        public abstract void Remove(T toRemove);
     }
 }

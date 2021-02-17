@@ -9,6 +9,12 @@
             <e p="AbstractChannel.cs" t="Include" />
             <e p="Vector2Channel.cs" t="Include" />
           </e>
+          <e p="PlayerInputSystem" t="Include">
+            <e p="InputReader.cs" t="Include" />
+          </e>
+          <e p="PlayerMovementSystem" t="Include">
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="GameraTechTest.sln" t="IncludeFlat" />
