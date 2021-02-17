@@ -46,7 +46,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PickupTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerPickupsGather.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/VoidEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/InternalVoidEventListener.cs" />
@@ -58,8 +57,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/FleeBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/FleeBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -111,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613554341807</updated>
       <workItem from="1613554350869" duration="7583000" />
-      <workItem from="1613577420369" duration="358000" />
+      <workItem from="1613577420369" duration="680000" />
     </task>
     <servers />
   </component>
