@@ -22,6 +22,7 @@ namespace PlayerMovementSystem
                 horizontalMovementInputChannel.GetValue().y);
             
             _rigidbody.velocity = direction.normalized * speed;
+            _rigidbody.MoveRotation(Quaternion.LookRotation(_rigidbody.velocity,Vector3.up));
         }
     }
 }
