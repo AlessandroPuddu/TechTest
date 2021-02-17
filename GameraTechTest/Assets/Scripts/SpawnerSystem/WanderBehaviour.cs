@@ -10,6 +10,7 @@ namespace SpawnerSystem
         [SerializeField, Range(0, 180f)] private float changeDirectionMaxAlpha;
         [SerializeField] private float changeDirectionFrequency;
         [SerializeField, Range(0f,10f)] private float targetDistance;
+        [SerializeField] private float wanderSpeed;
         
         private NavMeshAgent _navMeshAgent;
 
@@ -23,6 +24,8 @@ namespace SpawnerSystem
         public void StartWander()
         {
             if(_wanderCoroutine != null) return;
+
+            _navMeshAgent.speed = wanderSpeed;
             
             _wanderCoroutine = StartCoroutine(WanderCoroutine());
         }

@@ -35,12 +35,15 @@ namespace SpawnerSystem
 
         public void Spawn(int toSpawn)
         {
-            GameObject p = poolersManager.GetPooler(pickupPrefab).GetPooledObject();
+            for (int i = 0; i < toSpawn; i++)
+            {
+                GameObject p = poolersManager.GetPooler(pickupPrefab).GetPooledObject();
 
-            p.transform.position = transform.position + Vector3.right * Random.Range(-5, 5) +
-                                   Vector3.forward * Random.Range(-5, 5);
+                p.transform.position = transform.position + Vector3.right * Random.Range(-5, 5) +
+                                       Vector3.forward * Random.Range(-5, 5);
 
-            p.SetActive(true);   
+                p.SetActive(true);   
+            }
         }
     }
 }

@@ -46,7 +46,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PickupTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerPickupsGather.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/VoidEventListener.cs" />
@@ -59,6 +58,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventInternalChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/FleeBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -91,10 +92,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12420">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12420" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -110,6 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613554341807</updated>
       <workItem from="1613554350869" duration="7583000" />
+      <workItem from="1613577420369" duration="358000" />
     </task>
     <servers />
   </component>
@@ -128,6 +130,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

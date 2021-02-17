@@ -48,6 +48,7 @@
             <e p="PoolersManager.cs" t="Include" />
           </e>
           <e p="SpawnerSystem" t="Include">
+            <e p="FleeBehaviour.cs" t="Include" />
             <e p="SpawnBehaviour.cs" t="Include" />
             <e p="SpawnerAI.cs" t="Include" />
             <e p="WanderBehaviour.cs" t="Include" />

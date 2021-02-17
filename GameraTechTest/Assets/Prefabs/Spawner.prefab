@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 1131803078262864985}
   - component: {fileID: 7084186118992395428}
   - component: {fileID: 9089189963294606892}
+  - component: {fileID: 6048214306818991393}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -288,6 +289,7 @@ MonoBehaviour:
   changeDirectionMaxAlpha: 90
   changeDirectionFrequency: 1
   targetDistance: 5
+  wanderSpeed: 3
 --- !u!114 &9089189963294606892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +307,21 @@ MonoBehaviour:
   maxWait: 3
   poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}
   singleSpawn: 1
+--- !u!114 &6048214306818991393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535475767472009707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188558b09cd74b10912a4618be5a6e82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 11400000, guid: 3d3ad6646b15dea49a8ba0ac13ad9b2d, type: 2}
+  targetDistance: 5
+  fleeSpeed: 6
 --- !u!1 &8597585480420314782
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +333,8 @@ GameObject:
   - component: {fileID: 1753323891761578719}
   - component: {fileID: 988704784894085560}
   - component: {fileID: 2510494965338882255}
+  - component: {fileID: 6003022934203425651}
+  - component: {fileID: 3972797622870911552}
   m_Layer: 0
   m_Name: InternalEventListeners
   m_TagString: Untagged
@@ -384,6 +403,74 @@ MonoBehaviour:
       - m_Target: {fileID: 7084186118992395428}
         m_TargetAssemblyTypeName: SpawnerSystem.WanderBehaviour, Assembly-CSharp
         m_MethodName: StopWander
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6003022934203425651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597585480420314782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: 009764c683e57874a9d787e1cc8a858b, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6048214306818991393}
+        m_TargetAssemblyTypeName: SpawnerSystem.FleeBehaviour, Assembly-CSharp
+        m_MethodName: StartFlee
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9089189963294606892}
+        m_TargetAssemblyTypeName: SpawnerSystem.SpawnBehaviour, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3972797622870911552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597585480420314782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: bb164af3f4a1c4f44aabdc6270686e8d, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6048214306818991393}
+        m_TargetAssemblyTypeName: SpawnerSystem.FleeBehaviour, Assembly-CSharp
+        m_MethodName: StopFlee
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
