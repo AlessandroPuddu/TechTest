@@ -17,21 +17,21 @@ namespace SpawnerSystem
 
         private void Start()
         {
-            StartCoroutine(Test());
+            StartCoroutine(SpawnCoroutine());
         }
 
-        private IEnumerator Test()
+        private IEnumerator SpawnCoroutine()
         {
             while (true)
             {
                 GameObject p = poolersManager.GetPooler(pickupPrefab).GetPooledObject();
 
-                p.transform.position = transform.position + Vector3.up * 2 + Vector3.right * Random.Range(-5, 5) +
+                p.transform.position = transform.position + Vector3.right * Random.Range(-5, 5) +
                                        Vector3.forward * Random.Range(-5, 5);
 
                 p.SetActive(true);
                 
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(Random.Range(minWait,maxWait));
             }
         }
     }

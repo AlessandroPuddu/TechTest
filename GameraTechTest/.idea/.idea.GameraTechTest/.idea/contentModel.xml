@@ -21,6 +21,13 @@
               <e p="TransformChannelSetter.cs" t="Include" />
             </e>
           </e>
+          <e p="PickupSystem" t="Include">
+            <e p="Interfaces" t="Include">
+              <e p="IGatherPickups.cs" t="Include" />
+            </e>
+            <e p="PickupTrigger.cs" t="Include" />
+            <e p="PlayerPickupsGather.cs" t="Include" />
+          </e>
           <e p="PlayerInputSystem" t="Include">
             <e p="InputReader.cs" t="Include" />
           </e>
@@ -28,9 +35,6 @@
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="PoolingSystem" t="Include">
-            <e p="Interfaces" t="Include">
-              <e p="IPooler.cs" t="Include" />
-            </e>
             <e p="Pooler.cs" t="Include" />
             <e p="PoolersManager.cs" t="Include" />
           </e>

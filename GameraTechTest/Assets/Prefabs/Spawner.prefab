@@ -211,7 +211,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &1069581993357891272
 CapsuleCollider:
@@ -240,6 +240,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupPrefab: {fileID: 1173483011083217121, guid: 98c55a68a5bb90f48851fa5c85b02a33, type: 3}
-  minWait: 0
-  maxWait: 0
+  minWait: 1
+  maxWait: 3
   poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}

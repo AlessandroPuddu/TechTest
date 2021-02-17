@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using PoolingSystem.Interfaces;
 using UnityEngine;
 
 namespace PoolingSystem
@@ -12,7 +11,7 @@ namespace PoolingSystem
 
         private readonly Dictionary<GameObject, Pooler> _poolers = new Dictionary<GameObject, Pooler>();
 
-        public IPooler GetPooler(GameObject prefab)
+        public Pooler GetPooler(GameObject prefab)
         {
             if (!_poolers.ContainsKey(prefab))
             {

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1587133475340148446}
   - component: {fileID: 5898635258643261623}
   - component: {fileID: 5684154054860316394}
+  - component: {fileID: 6427159359986863088}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -94,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalMovementInputChannel: {fileID: 11400000, guid: 762a453b0c111ea4b8a9809420c12e50, type: 2}
   cameraTransform: {fileID: 11400000, guid: e7a77da1527fca148a80ec86246e24f9, type: 2}
+  cameraRelativeMovement: 0
   speed: 5
 --- !u!114 &5684154054860316394
 MonoBehaviour:
@@ -108,6 +110,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toSet: {fileID: 11400000, guid: 3d3ad6646b15dea49a8ba0ac13ad9b2d, type: 2}
+--- !u!114 &6427159359986863088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3017136690380204341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c86c9f48d884f5a8a8128d199d1f544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5012019878830521530
 GameObject:
   m_ObjectHideFlags: 0

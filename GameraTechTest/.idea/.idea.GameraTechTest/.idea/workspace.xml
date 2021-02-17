@@ -27,7 +27,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Variables/TransformChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementSystem/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CameraSystem/CameraMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Pooler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/IPooler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/IPoolerManger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Interfaces/IPoolerManger.cs" />
@@ -39,9 +38,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/TransformChannelSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Elements/PoolersManagerChannel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/PoolersManagerChannelSetter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/PoolersManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Interfaces/IPooler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/PoolersManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Pooler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/IGatherPickups.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PickupTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
