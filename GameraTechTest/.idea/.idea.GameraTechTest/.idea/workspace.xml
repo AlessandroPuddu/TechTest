@@ -12,6 +12,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Managers/PoolersManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Poolers/Pooler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Managers/RangerManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -20,12 +23,25 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputSystem/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Vector2Channel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Variables/Vector2Channel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/ChannelSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/TransformChannelSetter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/TransformChannelSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Variables/TransformChannel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraSystem/CameraMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovementSystem/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraSystem/CameraMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Pooler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/IPooler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/IPoolerManger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Interfaces/IPoolerManger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Elements/PoolerManagerChannelò.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Elements/PoolerManagerChannel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/ChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/ChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/AbstractChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/TransformChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Elements/PoolersManagerChannel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Setters/PoolersManagerChannelSetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/PoolersManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Interfaces/IPooler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -57,10 +73,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12420">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12420" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -75,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613554341807</updated>
-      <workItem from="1613554350869" duration="3185000" />
+      <workItem from="1613554350869" duration="7583000" />
     </task>
     <servers />
   </component>

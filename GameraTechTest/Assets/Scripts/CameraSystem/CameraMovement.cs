@@ -1,5 +1,4 @@
-﻿using System;
-using CommunicationSystem.Channels.Variables;
+﻿using CommunicationSystem.Channels.Variables;
 using UnityEngine;
 
 namespace CameraSystem
@@ -17,10 +16,10 @@ namespace CameraSystem
 
         private void LateUpdate()
         {
-            MoveLerped();    
+            MoveLerp();    
         }
 
-        private void MoveLerped()
+        private void MoveLerp()
         {
             Vector3 targetFacing = (target.GetValue().position - transform.position).normalized;
             Vector3 targetPosition = target.GetValue().position + offset;

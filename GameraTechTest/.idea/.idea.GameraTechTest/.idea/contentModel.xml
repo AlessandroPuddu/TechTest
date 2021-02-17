@@ -10,6 +10,7 @@
           </e>
           <e p="CommunicationSystem" t="Include">
             <e p="AbstractChannel.cs" t="Include" />
+            <e p="AbstractChannelSetter.cs" t="Include" />
             <e p="Channels" t="Include">
               <e p="Variables" t="Include">
                 <e p="TransformChannel.cs" t="Include" />
@@ -25,6 +26,16 @@
           </e>
           <e p="PlayerMovementSystem" t="Include">
             <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="PoolingSystem" t="Include">
+            <e p="Interfaces" t="Include">
+              <e p="IPooler.cs" t="Include" />
+            </e>
+            <e p="Pooler.cs" t="Include" />
+            <e p="PoolersManager.cs" t="Include" />
+          </e>
+          <e p="SpawnerSystem" t="Include">
+            <e p="SpawnBehaviour.cs" t="Include" />
           </e>
         </e>
       </e>

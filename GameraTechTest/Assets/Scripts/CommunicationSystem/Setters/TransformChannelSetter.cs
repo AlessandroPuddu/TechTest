@@ -3,13 +3,8 @@ using UnityEngine;
 
 namespace CommunicationSystem.Setters
 {
-    public class TransformChannelSetter : MonoBehaviour
+    public class TransformChannelSetter : AbstractChannelSetter<TransformChannel,Transform>
     {
-        [SerializeField] private TransformChannel toSet;
-
-        private void Awake()
-        {
-            toSet.SetValue(transform);
-        }
+        protected override Transform GetValue() => transform;
     }
 }
