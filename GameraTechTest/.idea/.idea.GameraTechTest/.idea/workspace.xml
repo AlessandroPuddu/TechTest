@@ -61,6 +61,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/FleeBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Animations/RotationBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Animations/ScalingBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -112,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613554341807</updated>
       <workItem from="1613554350869" duration="7583000" />
-      <workItem from="1613577420369" duration="1845000" />
+      <workItem from="1613577420369" duration="2415000" />
     </task>
     <servers />
   </component>
