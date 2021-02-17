@@ -5,6 +5,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="Fsm.cs" t="Include" />
+          </e>
           <e p="CameraSystem" t="Include">
             <e p="CameraMovement.cs" t="Include" />
           </e>
@@ -40,6 +43,7 @@
           </e>
           <e p="SpawnerSystem" t="Include">
             <e p="SpawnBehaviour.cs" t="Include" />
+            <e p="SpawnerAI.cs" t="Include" />
           </e>
         </e>
       </e>

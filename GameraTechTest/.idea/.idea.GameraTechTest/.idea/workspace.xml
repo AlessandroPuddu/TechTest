@@ -41,9 +41,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Interfaces/IPooler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/PoolersManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem/Pooler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/IGatherPickups.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PickupTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerGather.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerPickupsGather.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
