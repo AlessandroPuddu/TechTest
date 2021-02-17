@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Player/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Managers/PoolersManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Poolers/Pooler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../VoxcanoGames/ApocalypseRangers/Assets/Scripts/Managers/RangerManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -46,7 +47,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PickupSystem/PlayerPickupsGather.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AI/Fsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Channels/Events/VoidEventChannel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CommunicationSystem/Listeners/VoidEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/SpawnerAI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1obTYU9OSDt88USc6yeQK3WQ1zU" />
@@ -118,5 +123,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/SpawnerSystem/WanderBehaviour.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\GitRepos\TechTest\GameraTechTest\Assets\Scripts\SpawnerSystem\WanderBehaviour.cs" initialLine="23" containingFunctionPresentation="method 'StartWander'">
+            <startOffsets>
+              <option value="655" />
+            </startOffsets>
+            <endOffsets>
+              <option value="656" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

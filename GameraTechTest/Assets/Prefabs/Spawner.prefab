@@ -173,9 +173,11 @@ GameObject:
   - component: {fileID: 6535475767472009706}
   - component: {fileID: 1047949830485452632}
   - component: {fileID: 1069581993357891272}
+  - component: {fileID: 3741939999722593671}
   - component: {fileID: 9089189963294606892}
   - component: {fileID: 1134106027672440636}
   - component: {fileID: 1131803078262864985}
+  - component: {fileID: 7084186118992395428}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -210,8 +212,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -229,6 +231,34 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3741939999722593671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535475767472009707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: fc9aaa805b2764f4cb377d0673e024eb, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7084186118992395428}
+        m_TargetAssemblyTypeName: SpawnerSystem.WanderBehaviour, Assembly-CSharp
+        m_MethodName: StartWander
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9089189963294606892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +275,7 @@ MonoBehaviour:
   minWait: 1
   maxWait: 3
   poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}
-  singleSpawn: 0
+  singleSpawn: 1
 --- !u!195 &1134106027672440636
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -259,13 +289,13 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 240
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1131803078262864985
@@ -280,9 +310,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5122f4372624ddba772a6837812703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onWanderEnter: {fileID: 0}
-  onFleeEnter: {fileID: 0}
-  playerTransform: {fileID: 0}
-  fleeDistance: 0
-  wanderDistance: 0
-  fsmResolution: 0
+  onWanderEnter: {fileID: 11400000, guid: fc9aaa805b2764f4cb377d0673e024eb, type: 2}
+  onFleeEnter: {fileID: 11400000, guid: 251d8226b2609b44f855e12bc953296f, type: 2}
+  playerTransform: {fileID: 11400000, guid: 3d3ad6646b15dea49a8ba0ac13ad9b2d, type: 2}
+  fleeDistance: 3
+  wanderDistance: 6
+  fsmResolution: 0.2
+--- !u!114 &7084186118992395428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535475767472009707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e37a10846149a58b3fae5a61f73875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeDirectionMaxAlpha: 90
+  changeDirectionFrequency: 1
+  targetDistance: 5
