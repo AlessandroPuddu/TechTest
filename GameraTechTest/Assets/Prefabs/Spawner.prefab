@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 6535475767472009706}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6518868842150009700
 MeshFilter:
@@ -111,7 +111,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6535475767472009706}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6642281801736700307
 MeshFilter:
@@ -173,11 +173,10 @@ GameObject:
   - component: {fileID: 6535475767472009706}
   - component: {fileID: 1047949830485452632}
   - component: {fileID: 1069581993357891272}
-  - component: {fileID: 3741939999722593671}
-  - component: {fileID: 9089189963294606892}
   - component: {fileID: 1134106027672440636}
   - component: {fileID: 1131803078262864985}
   - component: {fileID: 7084186118992395428}
+  - component: {fileID: 9089189963294606892}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -196,6 +195,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1753323891761578719}
   - {fileID: 5704621661680638693}
   - {fileID: 7080982620815598709}
   m_Father: {fileID: 0}
@@ -231,51 +231,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3741939999722593671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6535475767472009707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  channel: {fileID: 11400000, guid: fc9aaa805b2764f4cb377d0673e024eb, type: 2}
-  onEventRaised:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7084186118992395428}
-        m_TargetAssemblyTypeName: SpawnerSystem.WanderBehaviour, Assembly-CSharp
-        m_MethodName: StartWander
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &9089189963294606892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6535475767472009707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d21b9cf77e843c88dbd6691bc6a482b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickupPrefab: {fileID: 1173483011083217121, guid: 98c55a68a5bb90f48851fa5c85b02a33, type: 3}
-  minWait: 1
-  maxWait: 3
-  poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}
-  singleSpawn: 1
 --- !u!195 &1134106027672440636
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -310,8 +265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5122f4372624ddba772a6837812703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onWanderEnter: {fileID: 11400000, guid: fc9aaa805b2764f4cb377d0673e024eb, type: 2}
-  onFleeEnter: {fileID: 11400000, guid: 251d8226b2609b44f855e12bc953296f, type: 2}
+  onWanderEnter: {fileID: 11400000, guid: 0d15a82998e4cfc45b7b1ee61ee960db, type: 2}
+  onWanderExit: {fileID: 11400000, guid: 7ca1b8bead8ba8342a4be55a112231dc, type: 2}
+  onFleeEnter: {fileID: 11400000, guid: 009764c683e57874a9d787e1cc8a858b, type: 2}
+  onFleeExit: {fileID: 11400000, guid: bb164af3f4a1c4f44aabdc6270686e8d, type: 2}
   playerTransform: {fileID: 11400000, guid: 3d3ad6646b15dea49a8ba0ac13ad9b2d, type: 2}
   fleeDistance: 3
   wanderDistance: 6
@@ -331,3 +288,108 @@ MonoBehaviour:
   changeDirectionMaxAlpha: 90
   changeDirectionFrequency: 1
   targetDistance: 5
+--- !u!114 &9089189963294606892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535475767472009707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d21b9cf77e843c88dbd6691bc6a482b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupPrefab: {fileID: 1173483011083217121, guid: 98c55a68a5bb90f48851fa5c85b02a33, type: 3}
+  minWait: 1
+  maxWait: 3
+  poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}
+  singleSpawn: 1
+--- !u!1 &8597585480420314782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753323891761578719}
+  - component: {fileID: 988704784894085560}
+  - component: {fileID: 2510494965338882255}
+  m_Layer: 0
+  m_Name: InternalEventListeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1753323891761578719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597585480420314782}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.026075, y: -18.54594, z: 6.1543694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6535475767472009706}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988704784894085560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597585480420314782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: 0d15a82998e4cfc45b7b1ee61ee960db, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7084186118992395428}
+        m_TargetAssemblyTypeName: SpawnerSystem.WanderBehaviour, Assembly-CSharp
+        m_MethodName: StartWander
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2510494965338882255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597585480420314782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1207592d724302a8eaf30a41708a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channel: {fileID: 11400000, guid: 7ca1b8bead8ba8342a4be55a112231dc, type: 2}
+  onEventRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7084186118992395428}
+        m_TargetAssemblyTypeName: SpawnerSystem.WanderBehaviour, Assembly-CSharp
+        m_MethodName: StopWander
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

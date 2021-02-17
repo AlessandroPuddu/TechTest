@@ -8,8 +8,10 @@ namespace SpawnerSystem
 {
     public class SpawnerAI : MonoBehaviour
     {
-        [SerializeField] private VoidEventChannel onWanderEnter;
-        [SerializeField] private VoidEventChannel onFleeEnter;
+        [SerializeField] private VoidEventInternalChannel onWanderEnter;
+        [SerializeField] private VoidEventInternalChannel onWanderExit;
+        [SerializeField] private VoidEventInternalChannel onFleeEnter;
+        [SerializeField] private VoidEventInternalChannel onFleeExit;
 
         [SerializeField] private TransformChannel playerTransform;
 
@@ -31,8 +33,11 @@ namespace SpawnerSystem
             wander.AddTransition(t1,flee);
             flee.AddTransition(t2,wander);
             
-            wander.enterActions.Add(() => onWanderEnter.GetValue()?.Invoke());
-            flee.enterActions.Add(() => onFleeEnter.GetValue()?.Invoke());
+            wander.enterActions.Add(() => onWanderEnter.Notify(transform.root));
+            wander.exitActions.Add(() => onWanderExit.Notify(transform.root));
+            
+            flee.enterActions.Add(() => onFleeEnter.Notify(transform.root));
+            flee.exitActions.Add(() => onFleeExit.Notify(transform.root));
 
             _fsm = new Fsm(wander);
         }

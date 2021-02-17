@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cbd1eca2c3e44a0989cafa23cc543e7, type: 3}
-  m_Name: Spawner_OnWanderEnter
+  m_Name: OnWanderExit
   m_EditorClassIdentifier: 

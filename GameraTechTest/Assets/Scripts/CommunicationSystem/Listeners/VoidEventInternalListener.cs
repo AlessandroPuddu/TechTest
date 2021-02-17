@@ -4,22 +4,22 @@ using UnityEngine.Events;
 
 namespace CommunicationSystem.Listeners
 {
-    public class VoidEventListener : MonoBehaviour
+    public class VoidEventInternalListener : MonoBehaviour
     {
-        [SerializeField] private VoidEventChannel channel;
+        [SerializeField] private VoidEventInternalChannel channel;
 
         [SerializeField] private UnityEvent onEventRaised;
 
         private void OnEnable()
         {
             if (channel != null)
-                channel.Add(Respond);
+                channel.AddListener(transform.root,Respond);
         }
 
         private void OnDisable()
         {
             if (channel != null)
-                channel.Remove(Respond);
+                channel.RemoveListener(transform.root,Respond);
         }
 
         private void Respond()

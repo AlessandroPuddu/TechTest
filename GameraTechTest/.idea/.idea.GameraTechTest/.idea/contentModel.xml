@@ -16,7 +16,7 @@
             <e p="AbstractChannelSetter.cs" t="Include" />
             <e p="Channels" t="Include">
               <e p="Events" t="Include">
-                <e p="VoidEventChannel.cs" t="Include" />
+                <e p="VoidEventInternalChannel.cs" t="Include" />
               </e>
               <e p="Variables" t="Include">
                 <e p="TransformChannel.cs" t="Include" />
@@ -24,7 +24,7 @@
               </e>
             </e>
             <e p="Listeners" t="Include">
-              <e p="VoidEventListener.cs" t="Include" />
+              <e p="VoidEventInternalListener.cs" t="Include" />
             </e>
             <e p="Setters" t="Include">
               <e p="TransformChannelSetter.cs" t="Include" />
