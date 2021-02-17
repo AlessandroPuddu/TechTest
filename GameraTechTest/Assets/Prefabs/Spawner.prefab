@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 1069581993357891272}
   - component: {fileID: 9089189963294606892}
   - component: {fileID: 1134106027672440636}
+  - component: {fileID: 1131803078262864985}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -244,9 +245,7 @@ MonoBehaviour:
   minWait: 1
   maxWait: 3
   poolersManager: {fileID: 11400000, guid: 1bd1a9d4f2066d349b4e795e0aa32fad, type: 2}
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  singleSpawn: 0
 --- !u!195 &1134106027672440636
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -269,3 +268,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1131803078262864985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6535475767472009707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5122f4372624ddba772a6837812703a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onWanderEnter: {fileID: 0}
+  onFleeEnter: {fileID: 0}
+  playerTransform: {fileID: 0}
+  fleeDistance: 0
+  wanderDistance: 0
+  fsmResolution: 0
