@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using AI;
 using CommunicationSystem.Channels.Events;
 using CommunicationSystem.Channels.Variables;
@@ -33,7 +34,7 @@ namespace SpawnerSystem
             wander.AddTransition(t1,flee);
             flee.AddTransition(t2,wander);
             
-            wander.enterActions.Add(() => onWanderEnter.Notify(transform.root));
+            wander.enterActions.Add(() => onWanderEnter.Notify(transform.root) );
             wander.exitActions.Add(() => onWanderExit.Notify(transform.root));
             
             flee.enterActions.Add(() => onFleeEnter.Notify(transform.root));
@@ -59,11 +60,13 @@ namespace SpawnerSystem
 
         private IEnumerator UpdateFsm()
         {
+            _fsm.StartFsm();
+            
             while (true)
             {
-                _fsm.UpdateFsm();
-
                 yield return new WaitForSeconds(fsmResolution);
+                
+                _fsm.UpdateFsm();
             }
         }
     }

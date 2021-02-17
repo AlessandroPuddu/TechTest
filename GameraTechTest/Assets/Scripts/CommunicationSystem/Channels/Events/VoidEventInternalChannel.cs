@@ -9,6 +9,11 @@ namespace CommunicationSystem.Channels.Events
     {
         private readonly Dictionary<Transform, Action> _listeners = new Dictionary<Transform, Action>();
 
+        private void OnDisable()
+        {
+            _listeners.Clear();
+        }
+
         public void AddListener(Transform listener, Action response)
         {
             if(!_listeners.ContainsKey(listener))

@@ -4,11 +4,18 @@ namespace AI
 {
     public class Fsm
     {
+        private readonly FsmState _startState;
+        
         private FsmState _current;
 
         public Fsm(FsmState state)
         {
-            _current = state;
+            _startState = state;
+        }
+
+        public void StartFsm()
+        {
+            _current = _startState;
             _current.Enter();
         }
 
